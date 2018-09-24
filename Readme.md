@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Суриков](https://up.htmlacademy.ru/adaptive/15/user/598165).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
