@@ -1,0 +1,5 @@
+@mixin font($size: 17px, $line-height: 30px) {
+  font-family: $font-stack;
+  font-size: $size;
+  line-height: $line-height;
+}

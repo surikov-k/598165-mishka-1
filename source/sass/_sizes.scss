@@ -1,0 +1,32 @@
+.sizes {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    list-style: none;
+  }
+
+  &__label {
+    display: block;
+    border: 2px solid #ececec;
+    width: 78px;
+    font-family: $font-stack;
+    font-style: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+
+  &__input:checked + &__label {
+    border: 2px solid $primary-color;
+  }
+
+  &__button {
+    margin-bottom: 40px;
+  }
+}

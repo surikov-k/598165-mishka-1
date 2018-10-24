@@ -1,0 +1,13 @@
+.featured {
+  &__wrapper {
+    // outline: 1px dashed lime;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 30px;
+    padding-bottom: 42px;
+    background: url("../img/bg-zigzag-line.svg") bottom;
+    background-repeat: repeat-x;
+    background-size: 325px;
+  }
+}
