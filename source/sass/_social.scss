@@ -1,0 +1,27 @@
+.social {
+  margin: 0;
+  // padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $grey-color;
+
+  &__link {
+    width: 30px;
+    height: 30px;
+    display: block;
+
+    &--instagram {
+      background: url("../img/icon-insta.svg") no-repeat center;
+    }
+
+    &--facebook {
+      background: url("../img/icon-fb.svg") no-repeat center;
+    }
+
+    &--twitter {
+      background: url("../img/icon-twitter.svg") no-repeat center;
+    }
+  }
+}

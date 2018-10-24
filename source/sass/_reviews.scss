@@ -1,0 +1,69 @@
+.reviews {
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 30px;
+    padding-bottom: 52px;
+    background: url("../img/bg-zigzag-line.svg") bottom;
+    background-repeat: repeat-x;
+    background-size: 325px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $font-stack;
+    font-style: 25px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 36px;
+    font-family: $font-stack;
+    font-size: 15px;
+    line-height: 30px;
+    color: $dark-grey-color;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-family: $font-stack;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__link {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: $font-stack;
+    font-style: 17px;
+    line-height: 30px;
+    color: $dark-grey-color;
+  }
+
+  &__arrows {
+    margin: 0;
+    margin-bottom: 38px;
+    display: flex;
+  }
+
+  &__arrow {
+    width: 50%;
+    border: 1px solid $grey-color;
+    height: 52px;
+
+    &--left {
+      border-right: 0;
+      background: url("../img/icon-left-arrow.svg") no-repeat center;
+    }
+
+    &--right {
+      background: url("../img/icon-right-arrow.svg") no-repeat center;
+    }
+  }
+}

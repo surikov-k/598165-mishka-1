@@ -1,0 +1,46 @@
+.video {
+  // outline: 1px dashed pink;
+
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    // outline: 1px dashed lime;
+    width: 260px;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-top: 27px;
+    padding-bottom: 25px;
+    font-family: $font-stack;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    background: url("../img/icon-video.svg") no-repeat 34px center;
+    border: 1px solid $grey-color;
+    border-bottom: none;
+  }
+
+  &__media-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__info {
+    margin: 30px;
+    margin-top: 0;
+    padding: 34px;
+    border: 1px solid $grey-color;
+    border-top: none;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $font-stack;
+    font-size: 13px;
+    line-height: 24px;
+    color: $dark-grey-color;
+  }
+}

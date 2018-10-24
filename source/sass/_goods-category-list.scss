@@ -1,0 +1,37 @@
+.goods-category-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // outline: 1px solid pink;
+
+  &__item:nth-child(odd) {
+    background-color: $primary-color;
+  }
+
+  &__item:nth-child(even) {
+    background-color: $dark-primary-color;
+  }
+
+  &__link {
+    font-family: $font-stack;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    padding: 28px 0;
+    padding-right: 170px;
+    padding-left: 30px;
+    // outline: 1px solid pink;
+    &--interior {
+      background: url("../img/icon-interior.svg") no-repeat 245px center;
+    }
+
+    &--toys {
+      background: url("../img/icon-toy.svg") no-repeat 235px center;
+    }
+  }
+}

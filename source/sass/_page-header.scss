@@ -1,0 +1,11 @@
+.page-header {
+  // outline: 1px solid lime;
+  &__logo-link {
+    // outline: 1px dotted pink;
+    display: block;
+    margin: 0 auto;
+    padding: 22px 0;
+    text-align: center;
+    border-bottom: 1px solid $grey-color;
+  }
+}

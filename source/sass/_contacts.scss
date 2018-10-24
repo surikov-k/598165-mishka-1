@@ -1,0 +1,50 @@
+.contacts {
+  &__wrapper {
+    width: 320px;
+    padding: 0 30px;
+    padding-top: 41px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 38px;
+    font-family: $font-stack;
+    font-style: 18px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  &__cell {
+    padding-bottom: 40px;
+    min-width: 68px;
+    vertical-align: top;
+    font-family: $font-stack;
+    font-style: 15px;
+    line-height: 30px;
+    color: $dark-grey-color;
+  }
+
+  &__email {
+    text-decoration: none;
+    padding-bottom: 4px;
+    color: $dark-grey-color;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  &__map {
+    // outline: 1px dashed pink;
+    margin-bottom: 40px;
+  }
+
+  &__map-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}

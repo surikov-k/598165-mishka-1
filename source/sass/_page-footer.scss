@@ -1,0 +1,33 @@
+.page-footer {
+  background-color: #f0f0f0;
+  padding-top: 25px;
+
+  &__wrapper {
+    // outline: 1px solid lime;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &__social {
+    // outline: 1px dashed pink;
+    padding: 0 50px;
+  }
+
+  &__copyright {
+    // outline: 1px dashed lime;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright-text {
+    // outline: 1px dashed pink;
+    padding-right: 30px;
+    font-family: $font-stack;
+    font-style: 19px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+}

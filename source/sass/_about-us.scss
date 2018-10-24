@@ -1,0 +1,67 @@
+.about-us {
+  // outline: 1px dashed pink;
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-family: $font-stack;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    // outline: 1px dashed lime;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    font-family: $font-stack;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+
+    &--eco {
+      background: url("../img/icon-feature-flower.svg") no-repeat;
+      background-position: 37px 0;
+    }
+
+    &--price {
+      background: url("../img/icon-feature-money.svg") no-repeat;
+      background-position: 30px 0;
+    }
+
+    &--likes {
+      background: url("../img/icon-feature-heart.svg") no-repeat;
+      background-position: 37px 0;
+    }
+
+    &--handmade {
+      background: url("../img/icon-feature-ball.svg") no-repeat;
+      background-position: 33px 0;
+    }
+
+    &--patriotic {
+      background: url("../img/icon-feature-rocket.svg") no-repeat;
+      background-position: 24px 0;
+    }
+
+    &--gift-wrap {
+      background: url("../img/icon-feature-gift.svg") no-repeat;
+      background-position: 33px 0;
+    }
+  }
+}

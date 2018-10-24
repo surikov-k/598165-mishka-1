@@ -1,0 +1,46 @@
+.item-card {
+  &__info {
+    padding: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: $font-stack;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: $font-stack;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__purchase {
+    // outline: 1px dashed lime;
+    padding-top: 26px;
+    border-top: 1px solid $grey-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    margin: 0;
+    font-family: $font-stack;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__to-basket {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-cart.svg") no-repeat center;
+  }
+}

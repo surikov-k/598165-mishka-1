@@ -1,0 +1,65 @@
+.goods-card {
+
+  // outline: 1px dashed lime;
+  &__title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: $font-stack;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  &__title-tag {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $font-stack;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $font-stack;
+    font-size: 15px;
+    line-height: 24px;
+    color: $dark-grey-color;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+  }
+
+  &__table-cell {
+    // outline: 1px dashed pink;
+    font-family: $font-stack;
+    font-size: 15px;
+    line-height: 20px;
+    color: $dark-grey-color;
+    padding: 0;
+    padding-top: 13px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $grey-color;
+  }
+
+  &__picture {
+    margin-bottom: 28px;
+  }
+
+  &__price {
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: $font-stack;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+.main-nav {
+  &__toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 0;
+    width: 21px;
+    height: 21px;
+    background: url("../img/icon-menu-close.svg") no-repeat center;
+  }
+
+  &__list {
+    &--addon {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: none;
+  }
+}
