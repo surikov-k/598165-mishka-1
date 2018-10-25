@@ -1,4 +1,5 @@
 .main-nav {
+
   &__list {
     margin: 0 auto;
     padding: 0;
@@ -26,50 +27,15 @@
     padding: 30px 0;
     padding-left: 75px;
 
-    // outline: 1px solid pink;
+    &--search {
+      background: url("../img/icon-search.svg") no-repeat 30px center;
+    }
+
     &--basket {
       background: url("../img/icon-cart.svg") no-repeat 30px center;
     }
   }
 
-  &__search-form {
-    width: 320px;
-    position: relative;
-    margin: 0 auto;
-    padding-left: 75px;
-  }
-
-  &__search-input {
-    width: 100%;
-    outline: none;
-    // outline: 1px solid pink;
-    border: none;
-    padding: 30px 0;
-    font-family: $font-stack;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-
-    color: black;
-
-    &::placeholder {
-      color: #000000;
-    }
-
-    &:focus::placeholder {
-      opacity: 0;
-    }
-  }
-
-  &__search-submit {
-    position: absolute;
-    left: 30px;
-    top: 32px;
-    width: 18px;
-    height: 18px;
-    border: none;
-    background: url("../img/icon-search.svg") no-repeat center;
-  }
 
   &__toggle {
     position: absolute;
@@ -79,6 +45,7 @@
     width: 21px;
     height: 21px;
     background: url("../img/icon-menu-close.svg") no-repeat center;
+
   }
 
   &__logo-link {
