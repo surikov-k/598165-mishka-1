@@ -1,15 +1,33 @@
 .video {
   // outline: 1px dashed pink;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 58px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 65px;
+  }
 
   &__wrapper {
-    width: 320px;
-    margin: 0 auto;
+    border: 1px solid $grey-color;
+    order: 1;
+
+    &:first-child {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-top: none;
+    }
   }
 
   &__title {
-    // outline: 1px dashed lime;
-    width: 260px;
-    margin: 0 auto;
+    margin: 0;
     padding-left: 90px;
     padding-top: 27px;
     padding-bottom: 25px;
@@ -18,21 +36,35 @@
     line-height: 24px;
     font-weight: 700;
     background: url("../img/icon-video.svg") no-repeat 34px center;
-    border: 1px solid $grey-color;
-    border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      background-position: 43px center;
+      background-size: 32px 22px;
+    }
   }
 
   &__media-img {
     display: block;
     margin: 0 auto;
+    order: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 668px;
+      height: 455px;
+    }
   }
 
   &__info {
-    margin: 30px;
     margin-top: 0;
     padding: 34px;
-    border: 1px solid $grey-color;
-    border-top: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 42px;
+      padding-top: 0;
+    }
   }
 
   &__text {
@@ -42,5 +74,11 @@
     font-size: 13px;
     line-height: 24px;
     color: $dark-grey-color;
+
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
   }
 }

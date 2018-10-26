@@ -10,53 +10,60 @@
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo-link">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">
+    <div class="page-header__wrapper">
+
+      <nav class="main-nav">
+
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <a href="index.html" class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
+        </a>
+
+        <ul class="main-nav__list main-nav__list--catalog">
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">
               Каталог товаров
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">
               Вязание на заказ
             </a>
           </li>
-          <li class="site-list__item">
-            <form class="site-list__search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="site-list__search-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-              <button class="site-list__search-submit" type="submit"><span class="visually-hidden">Найти</span>
-              </button>
-            </form>
+        </ul>
+
+        <ul class="main-nav__list main-nav__list--buy">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--search">
+              <span class="main-nav__search-text">Поиск по сайту</span>
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link site-list__link--basket">
-              Корзина: <span class="site-list__basket-amount"> пока пуста </span>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--basket">
+              Корзина: <span class="main-nav__basket-amount"> пока пуста </span>
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list main-nav__list--addon site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
+
+        <ul class="main-nav__list main-nav__list--new">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
               Новые поступления
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
               Распродажа
             </a>
           </li>
         </ul>
+
         <p class="main-nav__info">
           Бесплатная доставка по России
         </p>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -114,9 +121,11 @@
     <section class="video">
       <div class="video__wrapper">
         <h3 class="video__title">Процесс производства</h3>
-        <div class="video__media">
-          <img class="video__media-img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="">
-        </div>
+      </div>
+      <div class="video__media">
+        <img class="video__media-img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="">
+      </div>
+      <div class="video__wrapper">
         <div class="video__info">
           <p class="video__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -128,6 +137,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo-link">
+          <img class="page-footer__logo-img" width="102" height="34" src="img/logo-footer.svg" alt="Магазин «Мишка»">
+        </a>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a href="" class="social__link social__link--instagram">
@@ -152,7 +164,8 @@
         </div>
       </div>
     </footer>
-    <section class="add-to-basket modal">
+
+    <section class="add-to-basket modal hidden">
       <div class="add-to-basket__wrapper">
         <h2 class="add-to-basket__title">
           Добавить в&nbspкорзину

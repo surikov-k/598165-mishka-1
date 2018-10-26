@@ -1,6 +1,5 @@
 .page-main {
   // outline: 1px dashed lime;
-  // margin: 0 auto;
 
   &__nav {
     @media (min-width: $tablet-width) {
@@ -21,6 +20,11 @@
     @media (min-width: $tablet-width) {
       font-size: 47px;
       line-height: 50px;
+      border-top: 1px solid $grey-color;
+      margin-top: -72px;
+      padding-top: 100px;
+      padding-bottom: 87px;
+      background: #f9f9f9 url("../img/bg-zigzag-fill.svg") no-repeat bottom;
     }
 
     &--with-image {
