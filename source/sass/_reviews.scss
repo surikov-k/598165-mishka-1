@@ -1,5 +1,11 @@
 .reviews {
+  @media (min-width: $tablet-width) {
+    background: url("../img/review@1x.jpg") no-repeat;
+    background-size: 350px 447px;
+  }
+
   &__wrapper {
+    position: relative;
     width: 320px;
     margin: 0 auto;
     padding: 0 30px;
@@ -8,15 +14,29 @@
     background: url("../img/bg-zigzag-line.svg") bottom;
     background-repeat: repeat-x;
     background-size: 325px;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-width;
+      padding: 0 50px;
+      padding-top: 82px;
+      padding-bottom: 135px;
+      margin: 0 auto;
+      background-size: 775px;
+    }
   }
 
   &__title {
     margin: 0;
     margin-bottom: 30px;
     font-family: $font-stack;
-    font-style: 25px;
+    font-size: 25px;
     line-height: 30px;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+    }
   }
 
   &__text {
@@ -26,6 +46,11 @@
     font-size: 15px;
     line-height: 30px;
     color: $dark-grey-color;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+      margin-bottom: 64px;
+    }
   }
 
   &__name {
@@ -35,6 +60,11 @@
     line-height: 24px;
     font-weight: 700;
     font-style: normal;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: auto;
+    }
   }
 
   &__link {
@@ -43,19 +73,39 @@
     font-family: $font-stack;
     font-style: 17px;
     line-height: 30px;
+    font-weight: 400;
     color: $dark-grey-color;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__footer {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
   &__arrows {
     margin: 0;
     margin-bottom: 38px;
     display: flex;
+
+    @media (min-width: $tablet-width) {
+      width: 175px;
+      margin-bottom: 0;
+    }
   }
 
   &__arrow {
     width: 50%;
     border: 1px solid $grey-color;
     height: 52px;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
 
     &--left {
       border-right: 0;
@@ -64,6 +114,15 @@
 
     &--right {
       background: url("../img/icon-right-arrow.svg") no-repeat center;
+    }
+  }
+
+  &__button {
+    @media (min-width: $tablet-width) {
+      width: 175px;
+      position: absolute;
+      right: 50px;
+      top: 82px;
     }
   }
 }

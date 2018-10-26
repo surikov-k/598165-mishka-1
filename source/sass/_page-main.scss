@@ -2,6 +2,12 @@
   // outline: 1px dashed lime;
   // margin: 0 auto;
 
+  &__nav {
+    @media (min-width: $tablet-width) {
+      background-color: #f8f8f8;
+    }
+  }
+
   &__title {
     font-family: $font-stack;
     font-size: 27px;
@@ -12,10 +18,24 @@
 
     background-color: #f9f9f9;
 
+    @media (min-width: $tablet-width) {
+      font-size: 47px;
+      line-height: 50px;
+    }
+
     &--with-image {
       min-height: 282px;
       padding-top: 73px;
       background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center 0;
+
+      @media (min-width: $tablet-width) {
+        min-height: 627px;
+        margin-top: -70px;
+        padding-top: 160px;
+        background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat center 0;
+
+        border-top: 1px solid $grey-color;
+      }
     }
   }
 }

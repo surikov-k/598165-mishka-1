@@ -1,14 +1,19 @@
 .add-to-basket {
-  background-color: #ffffff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-
   &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     width: 320px;
-    margin: 0 auto;
     padding: 0 30px;
     padding-top: 35px;
-    border: 1px solid #c6c6c6;
-    // border-bottom: 1px solid #c6c6c6;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: $tablet-width) {
+      width: 566px;
+      padding-top: 50px;
+    }
   }
 
   &__title {
@@ -19,6 +24,12 @@
     text-transform: uppercase;
     font-size: 25px;
     line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 57px;
+      margin-bottom: 30px;
+    }
   }
 
   &__text {
@@ -26,7 +37,19 @@
     margin-bottom: 30px;
     text-align: center;
     font-family: $font-stack;
-    font-style: 15px;
+    font-size: 15px;
     line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+      font-size: 17px;
+    }
+  }
+
+  &__sizes {
+    @media (min-width: $tablet-width) {
+      width: 350px;
+      margin: 0 auto;
+    }
   }
 }

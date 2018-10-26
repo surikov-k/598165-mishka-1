@@ -6,8 +6,19 @@
     padding: 0 30px;
     padding-top: 30px;
     padding-bottom: 42px;
-    background: url("../img/bg-zigzag-line.svg") bottom;
+    background: url("../img/bg-zigzag-line.svg") bottom,
+      url("../img/bg-zigzag-fill.svg") top;
     background-repeat: repeat-x;
     background-size: 325px;
+
+    @media (min-width: $tablet-width) {
+
+      width: $tablet-width;
+      margin-top: -10px;
+      padding: 0 50px;
+      padding-bottom: 68px;
+      padding-top: 62px;
+      background-size: 775px;
+    }
   }
 }

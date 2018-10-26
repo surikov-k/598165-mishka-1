@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  // outline: 1px solid pink;
+
+  @media (min-width: $tablet-width) {
+
+    display: flex;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 
   &__item:nth-child(odd) {
     background-color: $primary-color;
@@ -10,6 +17,12 @@
 
   &__item:nth-child(even) {
     background-color: $dark-primary-color;
+  }
+
+  &__item {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
   }
 
   &__link {
@@ -25,13 +38,23 @@
     padding: 28px 0;
     padding-right: 170px;
     padding-left: 30px;
-    // outline: 1px solid pink;
+
     &--interior {
       background: url("../img/icon-interior.svg") no-repeat 245px center;
     }
 
     &--toys {
       background: url("../img/icon-toy.svg") no-repeat 235px center;
+    }
+
+    @media (min-width: $tablet-width) {
+
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 37px;
+
     }
   }
 }

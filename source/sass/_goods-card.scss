@@ -1,6 +1,22 @@
 .goods-card {
+  position: relative;
 
-  // outline: 1px dashed lime;
+  &__header {
+    @media (min-width: $tablet-width) {
+
+      display: flex;
+      margin-bottom: 45px;
+      align-items: center;
+      padding-right: 30px;
+    }
+  }
+
+  &__description {
+    @media (min-width: $tablet-width) {
+      width: 290px;
+    }
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 5px;
@@ -8,6 +24,13 @@
     font-size: 25px;
     line-height: 30px;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 0;
+      margin-right: auto;
+    }
   }
 
   &__title-tag {
@@ -19,9 +42,17 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $primary-color;
+
+    @media (min-width: $tablet-width) {
+
+      width: 90px;
+      text-align: center;
+      margin-bottom: 0;
+      line-height: 17px;
+    }
   }
 
-  &__description {
+  &__text {
     margin: 0;
     margin-bottom: 30px;
     font-family: $font-stack;
@@ -51,6 +82,12 @@
 
   &__picture {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 50px;
+      top: 165px;
+    }
   }
 
   &__price {
@@ -61,5 +98,9 @@
     line-height: 24px;
     font-weight: 700;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+    }
   }
 }
