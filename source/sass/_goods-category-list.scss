@@ -11,6 +11,11 @@
     padding: 0 50px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 100px;
+  }
+
   &__item:nth-child(odd) {
     background-color: $primary-color;
   }
@@ -41,20 +46,32 @@
 
     &--interior {
       background: url("../img/icon-interior.svg") no-repeat 245px center;
+
+      @media (min-width: $desktop-width) {
+        background-position: 450px center;
+      }
     }
 
     &--toys {
       background: url("../img/icon-toy.svg") no-repeat 235px center;
+
+      @media (min-width: $desktop-width) {
+        background-position: 430px center;
+      }
     }
 
     @media (min-width: $tablet-width) {
-
       font-size: 20px;
       line-height: 30px;
       padding-top: 32px;
       padding-bottom: 32px;
       padding-left: 37px;
 
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+      padding-right: 370px;
     }
   }
 }

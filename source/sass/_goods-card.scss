@@ -1,4 +1,5 @@
 .goods-card {
+
   position: relative;
 
   &__header {
@@ -9,11 +10,23 @@
       align-items: center;
       padding-right: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 36px;
+      margin-bottom: 48px;
+    }
   }
 
   &__description {
     @media (min-width: $tablet-width) {
       width: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 175px;
+      min-height: 490px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -30,6 +43,11 @@
       line-height: 50px;
       margin-bottom: 0;
       margin-right: auto;
+    }
+    @media (min-width: $desktop-width) {
+      order: 2;
+      font-size: 53px;
+      line-height: 57px;
     }
   }
 
@@ -50,6 +68,15 @@
       margin-bottom: 0;
       line-height: 17px;
     }
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+      margin-right: 45px;
+      min-height: 57px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__text {
@@ -59,12 +86,23 @@
     font-size: 15px;
     line-height: 24px;
     color: $dark-grey-color;
+
+    @media (min-width: $desktop-width) {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 65px;
+    }
   }
 
   &__table {
+    margin-bottom: 65px;
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 28px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: auto;
+    }
   }
 
   &__table-cell {
@@ -87,6 +125,14 @@
       position: absolute;
       right: 50px;
       top: 165px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 100px;
+      top: 88px;
+      width: 525px;
+      height: 636px;
+      z-index: -1;
     }
   }
 

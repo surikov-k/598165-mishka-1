@@ -20,5 +20,14 @@
       padding-top: 62px;
       background-size: 775px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      margin-top: -23px;
+      padding: 0 100px;
+      padding-top: 127px;
+      padding-bottom: 95px;
+      background-size: 1050px;
+    }
   }
 }

@@ -19,6 +19,12 @@
       display: flex;
       align-items: flex-start;
     }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      padding: 0 100px;
+      margin: 0 auto;
+    }
   }
 
   &__logo-link {
@@ -27,6 +33,10 @@
     @media (min-width: $tablet-width) {
       display: block;
       margin-right: 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 350px;
     }
   }
 
