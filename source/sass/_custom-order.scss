@@ -1,4 +1,14 @@
 .custom-order {
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+    margin-top: -15px;
+    padding-top: 145px;
+  }
+
   &__wrapper {
     width: 320px;
     margin: 0 auto;
@@ -15,16 +25,18 @@
         display: flex;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      padding: 0 100px;
+      margin: 0 auto;
+    }
   }
 
   &__background {
     @media (min-width: $tablet-width) {
       background-color: #f1f1f1;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 80px;
   }
 
   &__text {
@@ -39,6 +51,11 @@
       font-size: 17px;
       line-height: 30px;
       margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 175px;
+      padding-right: 175px;
     }
   }
 
@@ -91,6 +108,13 @@
       padding-top: 15px;
       width: 167px;
       flex-shrink: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 175px;
+      display: block;
+      text-align: center;
+      padding-top: 18px;
     }
   }
 
@@ -164,11 +188,11 @@
     border: 2px solid $dark-grey-color;
   }
 
-  &__radio + &__label::before {
+  &__radio+&__label::before {
     border-radius: 50%;
   }
 
-  &__radio:checked + &__label::after {
+  &__radio:checked+&__label::after {
     content: "";
     display: block;
     position: absolute;
@@ -180,7 +204,7 @@
     background-color: $primary-color;
   }
 
-  &__checkbox:checked + &__label::after {
+  &__checkbox:checked+&__label::after {
     content: "";
     display: block;
     position: absolute;
@@ -254,6 +278,9 @@
     @media (min-width: $tablet-width) {
       width: 230px;
       margin-right: auto;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 175px;
     }
   }
 }
