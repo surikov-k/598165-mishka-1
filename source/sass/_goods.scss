@@ -1,4 +1,9 @@
 .goods {
+  @media (min-width: $tablet-width) {
+    background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+  }
+
+
   &__wrapper {
     // outline: 1px dashed blue;
     width: 320px;
@@ -8,8 +13,18 @@
     @media (min-width: $tablet-width) {
       width: $tablet-width;
       padding: 0 50px;
-      padding-top: 70px;
+      padding-top: 90px;
       margin: 0 auto;
+      margin-top: -15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      padding: 0 100px;
+      padding-top: 90px;
+
+      margin: 0 auto;
+      margin-top: -15px;
     }
   }
 
@@ -17,6 +32,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__item {
