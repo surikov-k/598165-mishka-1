@@ -1,6 +1,35 @@
 .goods-card {
 
-  // outline: 1px dashed lime;
+  position: relative;
+
+  &__header {
+    @media (min-width: $tablet-width) {
+
+      display: flex;
+      margin-bottom: 45px;
+      align-items: center;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 36px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__description {
+    @media (min-width: $tablet-width) {
+      width: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 175px;
+      min-height: 490px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 5px;
@@ -8,6 +37,18 @@
     font-size: 25px;
     line-height: 30px;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 0;
+      margin-right: auto;
+    }
+    @media (min-width: $desktop-width) {
+      order: 2;
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 
   &__title-tag {
@@ -19,21 +60,49 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $primary-color;
+
+    @media (min-width: $tablet-width) {
+
+      width: 90px;
+      text-align: center;
+      margin-bottom: 0;
+      line-height: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+      margin-right: 45px;
+      min-height: 57px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
-  &__description {
+  &__text {
     margin: 0;
     margin-bottom: 30px;
     font-family: $font-stack;
     font-size: 15px;
     line-height: 24px;
     color: $dark-grey-color;
+
+    @media (min-width: $desktop-width) {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 65px;
+    }
   }
 
   &__table {
+    margin-bottom: 65px;
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 28px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: auto;
+    }
   }
 
   &__table-cell {
@@ -51,6 +120,20 @@
 
   &__picture {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 50px;
+      top: 165px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 100px;
+      top: 88px;
+      width: 525px;
+      height: 636px;
+      z-index: -1;
+    }
   }
 
   &__price {
@@ -61,5 +144,9 @@
     line-height: 24px;
     font-weight: 700;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+    }
   }
 }

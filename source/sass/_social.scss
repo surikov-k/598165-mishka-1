@@ -1,11 +1,9 @@
 .social {
-  margin: 0;
+  // margin: 0;
   // padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
-  border-bottom: 1px solid $grey-color;
 
   &__link {
     width: 30px;

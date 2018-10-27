@@ -1,6 +1,37 @@
 .item-card {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+
+  &__picture {
+    @media (min-width: $tablet-width) {
+      height: 334px;
+      width: 334px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 316px;
+      height: 462px;
+    }
+  }
+
   &__info {
     padding: 30px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      width: 334px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 316px;
+    }
   }
 
   &__title {
@@ -10,6 +41,11 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
@@ -18,11 +54,15 @@
     font-family: $font-stack;
     font-size: 13px;
     line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+      margin-bottom: auto;
+    }
   }
 
   &__purchase {
-    // outline: 1px dashed lime;
-    padding-top: 26px;
+    padding-top: 25px;
     border-top: 1px solid $grey-color;
     display: flex;
     justify-content: space-between;
@@ -35,6 +75,10 @@
     font-size: 15px;
     line-height: 24px;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+    }
   }
 
   &__to-basket {
