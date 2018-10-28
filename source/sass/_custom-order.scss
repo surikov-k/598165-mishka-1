@@ -41,7 +41,8 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 27px;
+    margin-top: 27px;
+    margin-bottom: 24px;
     font-family: $font-stack;
     font-size: 13px;
     line-height: 24px;
@@ -79,7 +80,7 @@
 
   &__legend {
     padding-right: 18px;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     font-family: $font-stack;
     font-size: 17px;
     line-height: 16px;
@@ -124,6 +125,9 @@
     list-style: none;
 
     &--color {
+      & li {
+        margin-bottom: 22px;
+      }
       @media (min-width: $tablet-width) {
         display: flex;
         flex-wrap: wrap;
@@ -138,6 +142,9 @@
   }
 
   &__group {
+      outline: 1px solid lime;
+      background-color: rgba(0, 240, 0, 0.05);
+      // margin-bottom:10px;
     @media (min-width: $tablet-width) {
       flex-grow: 1;
 
@@ -161,7 +168,7 @@
     padding-left: 64px;
     padding-top: 10px;
     // outline: 1px dashed lime;
-    margin-bottom: 22px;
+    margin-bottom: 13px;
     min-height: 40px;
 
     @media (min-width: $tablet-width) {

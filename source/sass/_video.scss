@@ -20,7 +20,7 @@
     margin: 0 auto;
     min-height: 455px;
     justify-content: space-between;
-    margin-bottom: 107px;
+    margin-bottom: 105px;
   }
 
   &__wrapper {
@@ -40,36 +40,35 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 668px;
+      margin-left: 680px;
     }
   }
 
   &__title {
     margin: 0;
     padding-left: 90px;
-    padding-top: 27px;
+    padding-top: 24px;
     padding-bottom: 25px;
     font-family: $font-stack;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
-    background: url("../img/icon-video.svg") no-repeat 34px center;
+    background: url("../img/icon-video.svg") no-repeat 33px 30px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 37px;
+      padding-bottom: 32px;
+      padding-left: 105px;
       font-size: 20px;
-      background-position: 43px center;
-      background-size: 32px 22px;
+      background-position: 40px 32px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 100px;
-      padding-left: 40px;
+      padding-top: 95px;
+      padding-left: 80px;
       padding-right: 140px;
-      padding-bottom: 30px;
-      background-position: 36px 46px;
-      // flex-grow: 2;
+      padding-bottom: 32px;
+      background-position: 80px 40px;
     }
   }
 
@@ -78,6 +77,8 @@
       position: absolute;
       top: 0;
       left: 100;
+      outline: 1px solid lime;
+      background-color: rgba(0, 240, 0, 0.05);
     }
   }
 
@@ -90,11 +91,16 @@
       width: 668px;
       height: 455px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 682px;
+    }
   }
 
   &__info {
     margin-top: 0;
     padding: 34px;
+    padding-top: 25px;
 
     @media (min-width: $tablet-width) {
       padding: 42px;
@@ -106,12 +112,14 @@
       min-height: 275px;
       display: flex;
       flex-direction: column;
+      padding-left: 80px;
+      padding-bottom:56px;
     }
   }
 
   &__text {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-family: $font-stack;
     font-size: 13px;
     line-height: 24px;
@@ -120,12 +128,18 @@
     @media (min-width: $tablet-width) {
       font-size: 15px;
       line-height: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
 
     @media (min-width: $desktop-width) {
 
       margin-bottom: auto;
+    }
+  }
+
+  &__button {
+    @media (min-width: $desktop-width) {
+      width: 230px;
     }
   }
 }

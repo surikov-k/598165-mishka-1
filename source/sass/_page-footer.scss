@@ -32,30 +32,32 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-      margin-right: 150px;
+      margin-right: 80px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 350px;
+      margin-right: 80px;
     }
   }
 
   &__social {
-    margin: 0;
+    margin: 0 auto;
     border-bottom: 1px solid $grey-color;
-    padding: 0 50px;
+    width: 150px;
+    padding: 0;
     padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
+      padding-top: 12px;
       border-bottom: none;
-      width: 162px;
+      width: 150px;
       margin-right: auto;
     }
   }
 
   &__copyright {
-    padding: 20px 0;
+    padding: 8px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,12 +70,16 @@
   &__copyright-text {
     padding-right: 30px;
     font-family: $font-stack;
-    font-style: 19px;
+    font-size: 19px;
     line-height: 18px;
     font-weight: 700;
 
     @media (min-width: $tablet-width) {
       margin: 0;
     }
+  }
+
+  &__copyright-link {
+    padding-top: 8px;
   }
 }

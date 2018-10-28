@@ -4,11 +4,10 @@
 
   &__header {
     @media (min-width: $tablet-width) {
-
       display: flex;
-      margin-bottom: 45px;
+      margin-bottom: 50px;
       align-items: center;
-      padding-right: 30px;
+      padding-right: 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -20,11 +19,14 @@
   &__description {
     @media (min-width: $tablet-width) {
       width: 290px;
+      min-height: 410px;
+      display: flex;
+      flex-direction: column;
     }
 
     @media (min-width: $desktop-width) {
       margin-left: 175px;
-      min-height: 490px;
+      min-height: 480px;
       display: flex;
       flex-direction: column;
     }
@@ -44,6 +46,7 @@
       margin-bottom: 0;
       margin-right: auto;
     }
+
     @media (min-width: $desktop-width) {
       order: 2;
       font-size: 53px;
@@ -53,7 +56,7 @@
 
   &__title-tag {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-family: $font-stack;
     font-size: 17px;
     line-height: 20px;
@@ -62,7 +65,7 @@
     color: $primary-color;
 
     @media (min-width: $tablet-width) {
-
+      padding-top: 5px;
       width: 90px;
       text-align: center;
       margin-bottom: 0;
@@ -81,16 +84,22 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-family: $font-stack;
     font-size: 15px;
     line-height: 24px;
     color: $dark-grey-color;
 
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+      line-height: 30px;
+      padding-bottom: 15px;
+    }
+
     @media (min-width: $desktop-width) {
       font-size: 17px;
       line-height: 30px;
-      margin-bottom: 65px;
+      margin-bottom: 35px;
     }
   }
 
@@ -98,7 +107,7 @@
     margin-bottom: 65px;
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 28px;
+    margin-bottom: auto;
 
     @media (min-width: $desktop-width) {
       margin-bottom: auto;
@@ -114,17 +123,30 @@
     padding: 0;
     padding-top: 13px;
     padding-right: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     border-bottom: 1px solid $grey-color;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 7;
+      padding-bottom: 8px;
+      padding-right: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   &__picture {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       position: absolute;
       right: 50px;
-      top: 165px;
+      top: 160px;
+      width: 333px;
+      height: 404px;
     }
 
     @media (min-width: $desktop-width) {
@@ -138,7 +160,7 @@
 
   &__price {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
     font-family: $font-stack;
     font-size: 17px;
     line-height: 24px;
@@ -146,7 +168,12 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      font-size: 24px;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 35px;
     }
   }
 }
