@@ -54,7 +54,7 @@
         margin-right: auto;
 
         & a {
-          padding: 22px 0;
+          padding: 18px 0;
           font-size: 15px;
           line-height: 24px;
         }
@@ -86,7 +86,7 @@
     @media (min-width: $tablet-width) {
       width: auto;
       margin: 0;
-      padding: 24px 0;
+      padding: 18px 0;
       padding-left: 0;
       padding-right: 36px;
       font-size: 15px;
@@ -96,8 +96,8 @@
     @media (min-width: $desktop-width) {
       // outline: 1px solid lime;
       width: 185px;
-      margin-right: 37px;
-      padding: 34px 0;
+      margin-right: 35px;
+      padding: 32px 0;
       font-size: 17px;
     }
 
@@ -183,6 +183,7 @@
     display: none;
 
     @media (min-width: $tablet-width) {
+      padding: 17px 0;
       display: block;
       order: 4;
     }

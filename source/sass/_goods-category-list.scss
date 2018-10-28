@@ -45,7 +45,7 @@
     padding-left: 30px;
 
     &--interior {
-      background: url("../img/icon-interior.svg") no-repeat 245px center;
+      background: url("../img/icon-interior.svg") no-repeat 250px center;
 
       @media (min-width: $desktop-width) {
         background-position: 450px center;
@@ -63,15 +63,16 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
-      padding-top: 32px;
+      padding-top: 28px;
       padding-bottom: 32px;
-      padding-left: 37px;
+      padding-left: 30px;
 
     }
 
     @media (min-width: $desktop-width) {
       width: auto;
       padding-right: 370px;
+      padding-left: 35px;
     }
   }
 }

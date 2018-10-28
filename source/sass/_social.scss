@@ -1,6 +1,5 @@
 .social {
-  // margin: 0;
-  // padding: 0;
+
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -11,15 +10,15 @@
     display: block;
 
     &--instagram {
-      background: url("../img/icon-insta.svg") no-repeat center;
+      background: url("../img/icon-insta.svg") no-repeat 3px 3px;
     }
 
     &--facebook {
-      background: url("../img/icon-fb.svg") no-repeat center;
+      background: url("../img/icon-fb.svg") no-repeat 5px 0px;
     }
 
     &--twitter {
-      background: url("../img/icon-twitter.svg") no-repeat center;
+      background: url("../img/icon-twitter.svg") no-repeat 0 3px;
     }
   }
 }
