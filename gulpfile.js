@@ -7,9 +7,17 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
+// gulp.src("../test/fixtures/*")
+//       .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+//       .pipe(through(function () {
+//         this.emit("error", new Error("Something happend: Error message!"))
+//       }));
+
+var notify = require("gulp-notify");
+
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()

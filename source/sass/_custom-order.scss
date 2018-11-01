@@ -61,7 +61,11 @@
   }
 
   &__fieldset {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+
+    &--group {
+      margin-bottom: 10px;
+    }
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -80,7 +84,7 @@
 
   &__legend {
     padding-right: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-family: $font-stack;
     font-size: 17px;
     line-height: 16px;
@@ -126,8 +130,9 @@
 
     &--color {
       & li {
-        margin-bottom: 22px;
+        margin-bottom: 21px;
       }
+
       @media (min-width: $tablet-width) {
         display: flex;
         flex-wrap: wrap;
@@ -142,9 +147,19 @@
   }
 
   &__group {
+    padding-top: 8px;
+
+    & label {
+      outline: 1px solid lime;
+      background-color: rgba(212, 0, 240, 0.05);
+    }
+
+
+    & input {
       outline: 1px solid lime;
       background-color: rgba(0, 240, 0, 0.05);
-      // margin-bottom:10px;
+    }
+
     @media (min-width: $tablet-width) {
       flex-grow: 1;
 
@@ -152,7 +167,7 @@
         display: flex;
         align-items: center;
         height: 53px;
-        margin-bottom: 23px;
+        margin-bottom: 24px;
       }
 
       & label input {
@@ -286,6 +301,7 @@
       width: 230px;
       margin-right: auto;
     }
+
     @media (min-width: $desktop-width) {
       margin-left: 175px;
     }
