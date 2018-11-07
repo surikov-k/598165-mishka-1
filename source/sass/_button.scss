@@ -9,10 +9,19 @@
   color: #000000;
   text-decoration: none;
   text-align: center;
-  border: 2px solid #000000;
+  border: 2px solid $dark-grey-color;
   background-color: #ffffff;
   padding-top: 16px;
   padding-bottom: 13px;
+
+  &:hover {
+    background-color: $dark-grey-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--submit {
     background-color: $primary-color;

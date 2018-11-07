@@ -27,6 +27,8 @@
   &__item {
     @media (min-width: $tablet-width) {
       width: 50%;
+
+
     }
   }
 
@@ -74,5 +76,10 @@
       padding-right: 370px;
       padding-left: 35px;
     }
+  }
+
+  &__item:hover {
+    height: 125px;
+    margin-top: -5px;
   }
 }

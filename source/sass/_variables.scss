@@ -5,8 +5,11 @@ $dark-grey-color: #444444;
 
 $body-text-color: $dark-grey-color;
 
-$font-stack: "OpenSans", "Arial", sans-serif;
+$font-stack: "OpenSans",
+"Arial",
+sans-serif;
 
 $phone-width: 260px;
 $tablet-width: 768px;
 $desktop-width: 1250px;
+$mobile-width-only: 767px;

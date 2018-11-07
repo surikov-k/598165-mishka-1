@@ -33,10 +33,6 @@
 
     &:last-child {
       border-top: none;
-
-      @media (min-width: $desktop-width) {
-        flex-grow: 1;
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -56,6 +52,7 @@
     background: url("../img/icon-video.svg") no-repeat 33px 30px;
 
     @media (min-width: $tablet-width) {
+      margin-top: 455px;
       padding-top: 37px;
       padding-bottom: 32px;
       padding-left: 105px;
@@ -64,6 +61,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 0;
       padding-top: 95px;
       padding-left: 80px;
       padding-right: 140px;
@@ -73,19 +71,26 @@
   }
 
   &__media {
+    position: relative;
+    outline: 1px solid lime;
+    background-color: rgba(0, 240, 0, 0.05);
+
     @media (min-width: $desktop-width) {
       position: absolute;
       top: 0;
       left: 100;
-      outline: 1px solid lime;
-      background-color: rgba(0, 240, 0, 0.05);
     }
   }
 
-  &__media-img {
+  &__player {
+    position: absolute;
+    width: 260px;
+    height: 150px;
     display: block;
     margin: 0 auto;
     order: 0;
+    background: url("../img/video-desktop@2x.jpg") no-repeat center;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       width: 668px;
@@ -97,23 +102,57 @@
     }
   }
 
+  &__play {
+    display: block;
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateX(-50%) translateY(-50%);
+    width: 101px;
+    height: 77px;
+    top: 35px;
+    left: 79px;
+    margin: auto;
+    border: none;
+    background: url(../img/icon-play.svg) no-repeat center;
+    z-index: 10;
+
+    @media (min-width: $tablet-width) {
+      top: 190px;
+      left: 283px;
+    }
+
+
+
+    &:hover {
+      transform: scale(1.2);
+      // transform-origin: 50% 50%;
+    }
+
+  }
+
   &__info {
-    margin-top: 0;
+
     padding: 34px;
     padding-top: 25px;
 
     @media (min-width: $tablet-width) {
+
       padding: 42px;
       padding-top: 0;
     }
 
     @media (min-width: $desktop-width) {
-
+      margin-top: 0;
       min-height: 275px;
       display: flex;
       flex-direction: column;
       padding-left: 80px;
-      padding-bottom:56px;
+      padding-bottom: 56px;
+
+      &:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      }
     }
   }
 

@@ -365,6 +365,20 @@
     }
   }
 
+
+  &__option &__label:hover::before {
+    @media (min-width: $desktop-width) {
+      border-color: $primary-color;
+    }
+  }
+
+
+  &__option &__label:active::before {
+    @media (min-width: $desktop-width) {
+      border-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   &__input {
     display: block;
     width: 100%;
@@ -377,7 +391,16 @@
     font-family: $font-stack;
     font-size: 17px;
     line-height: 18px;
+
+    @media (min-width: $desktop-width) {
+      &:focus {
+        outline: none;
+        border-bottom-color: $primary-color;
+      }
+    }
   }
+
+
 
   &__fieldset--phone &__input {
     font-size: 19px;
@@ -394,6 +417,13 @@
     color: $dark-grey-color;
     border: 2px solid #000000;
     resize: none;
+
+    @media (min-width: $desktop-width) {
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+      }
+    }
   }
 
   &__footnote {

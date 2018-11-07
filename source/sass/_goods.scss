@@ -3,6 +3,7 @@
     background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
     background-size: 768px 22px;
   }
+
   @media (min-width: $desktop-width) {
     background-size: 1150px;
   }
@@ -49,10 +50,5 @@
   &__item {
     border: 1px solid #ededed;
     margin-bottom: 30px;
-
-    @media (min-width: $tablet-width) {
-      // margin-bottom: 52px;
-
-    }
   }
 }

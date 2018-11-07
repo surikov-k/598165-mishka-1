@@ -79,6 +79,7 @@
 
   &__table {
     margin-bottom: 8px;
+
     @media (min-width: $tablet-width) {
       border-collapse: collapse;
       margin-bottom: 60px;
@@ -132,6 +133,16 @@
     padding-bottom: 2px;
     color: $dark-grey-color;
     border-bottom: 1px solid $primary-color;
+
+    @media (min-width: $desktop-width) {
+      &:hover {
+        color: $primary-color;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 
   &__map {
