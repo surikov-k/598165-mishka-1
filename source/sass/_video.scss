@@ -105,9 +105,6 @@
   &__play {
     display: block;
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translateX(-50%) translateY(-50%);
     width: 101px;
     height: 77px;
     top: 35px;
@@ -126,7 +123,6 @@
 
     &:hover {
       transform: scale(1.2);
-      // transform-origin: 50% 50%;
     }
 
   }

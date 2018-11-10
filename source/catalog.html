@@ -77,7 +77,11 @@
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item-card">
-              <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="" class="item-card__picture">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="item-card__picture" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x"
+                  alt="Зайчик-попрыгайчик"></picture>
               <div class="item-card__info">
                 <h3 class="item-card__title"><a href="#" class="item-card__link"> Зайчик-попрыгайчик</a></h3>
                 <p class="item-card__description">Рост 30 см, вес 200 г</p>
@@ -90,7 +94,12 @@
           </li>
           <li class="goods__item">
             <article class="item-card">
-              <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="" class="item-card__picture">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="item-card__picture" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"
+                  alt="Корзинка для белья">
+              </picture>
               <div class="item-card__info">
                 <h3 class="item-card__title">
                   <a href="#" class="item-card__link">
@@ -107,7 +116,13 @@
           </li>
           <li class="goods__item">
             <article class="item-card">
-              <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="" class="item-card__picture">
+              <picture>
+
+                <source media="(min-width:  1250px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="item-card__picture" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x"
+                  alt="Большая корзинка для игрушек">
+              </picture>
               <div class="item-card__info">
                 <h3 class="item-card__title">
                   <a href="#" class="item-card__link">

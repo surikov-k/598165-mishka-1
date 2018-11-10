@@ -147,12 +147,14 @@
 
 
   &--closed &__toggle {
+    // outline: 1px solid lime;
+    // background-color: rgba(0, 240, 0, 0.05);
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 0px;
+    right: 0px;
     border: 0;
-    width: 21px;
-    height: 21px;
+    width: 80px;
+    height: 80px;
     background: url("../img/icon-menu-open.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
@@ -164,11 +166,11 @@
 
   &--opened &__toggle {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 0px;
+    right: 0px;
     border: 0;
-    width: 21px;
-    height: 21px;
+    width: 80px;
+    height: 80px;
     background: url("../img/icon-menu-close.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
